@@ -187,35 +187,6 @@ function App() {
                       </div>
 
                       {/* Email Section */}
-                      <div className="card bg-success bg-opacity-10 border-success">
-                        <div className="card-body">
-                          <h5 className="card-title fw-semibold mb-3">
-                            <i className="bi bi-envelope"></i> Send Results via Email
-                          </h5>
-                          <div className="mb-3">
-                            <label className="form-label">Email Address:</label>
-                            <input
-                              type="email"
-                              value={email}
-                              onChange={(e) => setEmail(e.target.value)}
-                              className="form-control"
-                              placeholder="your@email.com"
-                            />
-                          </div>
-                          <button
-                            onClick={handleSendEmail}
-                            disabled={!email || sending}
-                            className="btn btn-success w-100"
-                          >
-                            {sending ? 'Opening Email Client...' : 'Send Email'}
-                          </button>
-                          {emailSent && (
-                            <div className="alert alert-success mt-3 mb-0">
-                              Email client opened! Please send the email from your email application.
-                            </div>
-                          )}
-                        </div>
-                      </div>
                     </div>
                   )}
                 </div>
